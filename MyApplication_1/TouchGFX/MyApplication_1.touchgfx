@@ -1,0 +1,138 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Main",
+        "Components": [
+          {
+            "Type": "Container",
+            "Name": "Background",
+            "Width": 240,
+            "Height": 320,
+            "Components": []
+          },
+          {
+            "Type": "Image",
+            "Name": "road",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "bg_game.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 103,
+            "Y": 231,
+            "Width": 35,
+            "Height": 73,
+            "RelativeFilename": "car_green.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "leftButton",
+            "X": 15,
+            "Y": 260,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Style": "Style5"
+          },
+          {
+            "Type": "Button",
+            "Name": "rightButton",
+            "X": 167,
+            "Y": 260,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Style": "Style5"
+          },
+          {
+            "Type": "Image",
+            "Name": "redcar",
+            "X": 150,
+            "Y": -36,
+            "Width": 35,
+            "Height": 73,
+            "RelativeFilename": "car_red.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "leftFunction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "leftButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "leftFunction"
+            }
+          },
+          {
+            "InteractionName": "rightFunction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "rightButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "rightFunction"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication_1",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Main",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../STM32F429I-DISCO.ioc --platform=m4",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait"
+  },
+  "Version": "4.19.1",
+  "CreatedBy": "4.19.1"
+}
