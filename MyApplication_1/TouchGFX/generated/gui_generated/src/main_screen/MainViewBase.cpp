@@ -17,7 +17,7 @@ MainViewBase::MainViewBase() :
     road.setXY(0, 0);
     road.setBitmap(touchgfx::Bitmap(BITMAP_BG_GAME_ID));
 
-    image1.setXY(103, 231);
+    image1.setXY(103, 236);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_GREEN_ID));
 
     leftButton.setXY(15, 260);
@@ -31,6 +31,10 @@ MainViewBase::MainViewBase() :
     redcar.setXY(150, -36);
     redcar.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
 
+    GameState.setXY(7, 0);
+    GameState.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
+    GameState.setAction(buttonCallback);
+
     add(__background);
     add(Background);
     add(road);
@@ -38,6 +42,7 @@ MainViewBase::MainViewBase() :
     add(leftButton);
     add(rightButton);
     add(redcar);
+    add(GameState);
 }
 
 void MainViewBase::setupScreen()
@@ -60,5 +65,12 @@ void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When rightButton clicked call virtual function
         //Call rightFunction
         rightFunction();
+    }
+    else if (&src == &GameState)
+    {
+        //startGame
+        //When GameState clicked call virtual function
+        //Call startGame
+        startGame();
     }
 }

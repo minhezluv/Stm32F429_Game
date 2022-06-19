@@ -11,6 +11,8 @@
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/EasingEquations.hpp>
+#include <touchgfx/mixins/MoveAnimator.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -32,6 +34,11 @@ public:
         // Override and implement this function in Main
     }
 
+    virtual void startGame()
+    {
+        // Override and implement this function in Main
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -43,10 +50,11 @@ protected:
     touchgfx::Box __background;
     touchgfx::Container Background;
     touchgfx::Image road;
-    touchgfx::Image image1;
+    touchgfx::MoveAnimator< touchgfx::Image > image1;
     touchgfx::Button leftButton;
     touchgfx::Button rightButton;
     touchgfx::Image redcar;
+    touchgfx::Button GameState;
 
 private:
 

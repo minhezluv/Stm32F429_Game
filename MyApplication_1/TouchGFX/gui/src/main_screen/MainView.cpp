@@ -18,21 +18,21 @@ void MainView::tearDownScreen()
 
 void MainView:: rightFunction(){
 
-    int currX = image1.getX() + 10;
+    int currX = image1.getX() + 47;
     int currY = image1.getY() ;
 
   //  image1.setVisible(true);
-    image1.setXY(currX, currY);
+    image1.moveTo(currX, currY);
    // image1.setVisible(true);
-    Background.invalidate();
+  //  Background.invalidate();
     image1.invalidate();
 }
 void MainView:: leftFunction(){
-    int currX = image1.getX() - 10;
+    int currX = image1.getX() - 47;
     int currY = image1.getY() ;
     image1.moveTo(currX, currY);
    // image1.setVisible(true);
-    Background.invalidate();
+  //  Background.invalidate();
     image1.invalidate();
 }
 
@@ -47,6 +47,7 @@ void MainView:: resetCar(){
 
 void MainView::handleTickEvent(){
     tickCounter++;
+    if(GameState){
     if(redcar.getY()<240){
          moveCar(redcar.getX(),redcar.getY()+tickCounter/10);
    
@@ -54,6 +55,18 @@ void MainView::handleTickEvent(){
         tickCounter=0;
          resetCar();
     }
+    if(isTouching(image1.getX(),image1.getY(),redcar.getX(),redcar.getY())){
+        GameState=false;
+    }
+    }
+
   
 
+
+}
+bool MainView::isTouching(int16_t ball_x, int16_t ball_y, int16_t paddle_x, int16_t paddle_y){
+   return (abs(ball_x-paddle_x)<35)&&(abs(ball_y-paddle_y)<73);
+}
+void MainView::startGame(){
+    this->GameState=true;
 }
