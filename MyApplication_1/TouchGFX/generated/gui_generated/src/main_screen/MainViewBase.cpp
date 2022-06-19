@@ -4,6 +4,7 @@
 #include <gui_generated/main_screen/MainViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 MainViewBase::MainViewBase() :
     buttonCallback(this, &MainViewBase::buttonCallbackHandler)
@@ -17,32 +18,49 @@ MainViewBase::MainViewBase() :
     road.setXY(0, 0);
     road.setBitmap(touchgfx::Bitmap(BITMAP_BG_GAME_ID));
 
+    road1.setXY(0, -320);
+    road1.setBitmap(touchgfx::Bitmap(BITMAP_BG_GAME_ID));
+
     image1.setXY(103, 236);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_GREEN_ID));
 
-    leftButton.setXY(15, 260);
-    leftButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    leftButton.setAction(buttonCallback);
+    redcar.setXY(58, -81);
+    redcar.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
 
     rightButton.setXY(167, 260);
     rightButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     rightButton.setAction(buttonCallback);
 
-    redcar.setXY(150, -36);
-    redcar.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
+    leftButton.setXY(15, 260);
+    leftButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    leftButton.setAction(buttonCallback);
 
-    GameState.setXY(7, 0);
-    GameState.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
+    GameState.setXY(15, 13);
+    GameState.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID));
     GameState.setAction(buttonCallback);
+
+    ExitGame.setXY(194, 9);
+    ExitGame.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_48_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_48_ID));
+    ExitGame.setAction(buttonCallback);
+
+    Score.setPosition(79, 14, 83, 41);
+    Score.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Score.setLinespacing(0);
+    Unicode::snprintf(ScoreBuffer, SCORE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ZQ4I).getText());
+    Score.setWildcard(ScoreBuffer);
+    Score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DB3A));
 
     add(__background);
     add(Background);
     add(road);
+    add(road1);
     add(image1);
-    add(leftButton);
-    add(rightButton);
     add(redcar);
+    add(rightButton);
+    add(leftButton);
     add(GameState);
+    add(ExitGame);
+    add(Score);
 }
 
 void MainViewBase::setupScreen()
@@ -52,19 +70,19 @@ void MainViewBase::setupScreen()
 
 void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &leftButton)
-    {
-        //leftFunction
-        //When leftButton clicked call virtual function
-        //Call leftFunction
-        leftFunction();
-    }
-    else if (&src == &rightButton)
+    if (&src == &rightButton)
     {
         //rightFunction
         //When rightButton clicked call virtual function
         //Call rightFunction
         rightFunction();
+    }
+    else if (&src == &leftButton)
+    {
+        //leftFunction
+        //When leftButton clicked call virtual function
+        //Call leftFunction
+        leftFunction();
     }
     else if (&src == &GameState)
     {
@@ -72,5 +90,12 @@ void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When GameState clicked call virtual function
         //Call startGame
         startGame();
+    }
+    else if (&src == &ExitGame)
+    {
+        //Interaction1
+        //When ExitGame clicked change screen to GameOver
+        //Go to GameOver with no screen transition
+        application().gotoGameOverScreenNoTransition();
     }
 }

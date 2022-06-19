@@ -64,18 +64,27 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
- gui/include/gui/model/Model.hpp gui/include/gui/main_screen/MainView.hpp \
- generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp \
+ gui/include/gui/model/Model.hpp \
+ gui/include/gui/start_screen/startView.hpp \
+ generated/gui_generated/include/gui_generated/start_screen/startViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/main_screen/MainPresenter.hpp \
+ gui/include/gui/start_screen/startPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ gui/include/gui/main_screen/MainView.hpp \
+ generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp \
+ gui/include/gui/main_screen/MainPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ gui/include/gui/gameover_screen/GameOverView.hpp \
+ generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ gui/include/gui/gameover_screen/GameOverPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
 
@@ -209,13 +218,13 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
-gui/include/gui/main_screen/MainView.hpp:
+gui/include/gui/start_screen/startView.hpp:
 
-generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp:
+generated/gui_generated/include/gui_generated/start_screen/startViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/main_screen/MainPresenter.hpp:
+gui/include/gui/start_screen/startPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
@@ -229,9 +238,25 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+gui/include/gui/main_screen/MainView.hpp:
+
+generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp:
+
+gui/include/gui/main_screen/MainPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+gui/include/gui/gameover_screen/GameOverView.hpp:
+
+generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+
+gui/include/gui/gameover_screen/GameOverPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 

@@ -2,6 +2,42 @@
   "Application": {
     "Screens": [
       {
+        "Name": "start",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "bg_start",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "poster.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "playButton",
+            "X": 87,
+            "Y": 143,
+            "Width": 66,
+            "Height": 67,
+            "Pressed": "button_play.png",
+            "Released": "button_play.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "playButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
         "Name": "Main",
         "Components": [
           {
@@ -20,6 +56,14 @@
           },
           {
             "Type": "Image",
+            "Name": "road1",
+            "Y": -320,
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "bg_game.png"
+          },
+          {
+            "Type": "Image",
             "Name": "image1",
             "X": 103,
             "Y": 236,
@@ -27,6 +71,26 @@
             "Height": 73,
             "RelativeFilename": "car_green.png",
             "Moveable": true
+          },
+          {
+            "Type": "Image",
+            "Name": "redcar",
+            "X": 58,
+            "Y": -81,
+            "Width": 35,
+            "Height": 73,
+            "RelativeFilename": "car_red.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "rightButton",
+            "X": 167,
+            "Y": 260,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Style": "Style5"
           },
           {
             "Type": "Button",
@@ -41,33 +105,38 @@
           },
           {
             "Type": "Button",
-            "Name": "rightButton",
-            "X": 167,
-            "Y": 260,
-            "Width": 60,
-            "Height": 60,
-            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Style": "Style5"
-          },
-          {
-            "Type": "Image",
-            "Name": "redcar",
-            "X": 150,
-            "Y": -36,
-            "Width": 35,
-            "Height": 73,
-            "RelativeFilename": "car_red.png"
+            "Name": "GameState",
+            "X": 15,
+            "Y": 13,
+            "Width": 30,
+            "Height": 42,
+            "Pressed": "__designer\\Blue_Icons_Pause_48.png",
+            "Released": "__designer\\Blue_Icons_Pause_48.png"
           },
           {
             "Type": "Button",
-            "Name": "GameState",
-            "X": 7,
-            "Width": 60,
-            "Height": 60,
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
-            "Style": "Style1"
+            "Name": "ExitGame",
+            "X": 194,
+            "Y": 9,
+            "Width": 46,
+            "Height": 46,
+            "Pressed": "__designer\\Blue_Icons_Remove_48.png",
+            "Released": "__designer\\Blue_Icons_Remove_48.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Score",
+            "X": 79,
+            "Y": 14,
+            "Width": 83,
+            "Height": 41,
+            "TextId": "__SingleUse_DB3A",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_ZQ4I",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
           }
         ],
         "Interactions": [
@@ -103,6 +172,76 @@
               "Type": "ActionCustom",
               "FunctionName": "startGame"
             }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ExitGame"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "GameOver"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "GameOver",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "GameOver.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "rePlay",
+            "X": 97,
+            "Y": 160,
+            "Width": 46,
+            "Height": 43,
+            "Pressed": "__designer\\Blue_Icons_Refresh_48.png",
+            "Released": "__designer\\Blue_Icons_Refresh_48.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "exit",
+            "X": 97,
+            "Y": 213,
+            "Width": 46,
+            "Height": 46,
+            "Pressed": "__designer\\Blue_Icons_Remove_48.png",
+            "Released": "__designer\\Blue_Icons_Remove_48.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "exit"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "start"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "rePlay"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
           }
         ]
       }
@@ -114,7 +253,7 @@
       "Height": 320
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Main",
+    "StartupScreenName": "start",
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",

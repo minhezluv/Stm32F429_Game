@@ -184,6 +184,30 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>BF515600-5B15-30A2-D6FC-682BF53EB555</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\start_screen">
+      <UniqueIdentifier>98881110-3A36-AFE0-D7C7-57FFFD34CCB8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\start_screen">
+      <UniqueIdentifier>4F85DCDA-84B1-8AFC-7689-53A5C5AD7329</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\gameover_screen">
+      <UniqueIdentifier>3D7705F8-9079-3301-F4BC-798B2299EF06</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\gameover_screen">
+      <UniqueIdentifier>67D88F25-E5CA-5C5B-588A-03F70389F8B5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\gameover_screen">
+      <UniqueIdentifier>A3EEEAC0-7D32-7A66-48D8-86656FD2B305</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\start_screen">
+      <UniqueIdentifier>8286008C-2A8F-0756-E7E1-ADD826555C65</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\start_screen">
+      <UniqueIdentifier>D0C36031-F79D-9E7B-C9C7-CFF657DA01A0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\gameover_screen">
+      <UniqueIdentifier>8E742417-6091-CC55-5175-A5C73C2EC128</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -224,6 +248,24 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gameover_screen\GameOverPresenter.cpp">
+      <Filter>Source Files\gui\gameover_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gameover_screen\GameOverView.cpp">
+      <Filter>Source Files\gui\gameover_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\gameover_screen\GameOverViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\gameover_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\start_screen\startPresenter.cpp">
+      <Filter>Source Files\gui\start_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\start_screen\startView.cpp">
+      <Filter>Source Files\gui\start_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\start_screen\startViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\start_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -675,6 +717,24 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\GameOverPresenter.hpp">
+      <Filter>Header Files\gui\gameover_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\GameOverView.hpp">
+      <Filter>Header Files\gui\gameover_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gameover_screen\GameOverViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\gameover_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\start_screen\startPresenter.hpp">
+      <Filter>Header Files\gui\start_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\start_screen\startView.hpp">
+      <Filter>Header Files\gui\start_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\start_screen\startViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\start_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

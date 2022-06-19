@@ -11,6 +11,7 @@
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/MoveAnimator.hpp>
 
@@ -50,11 +51,20 @@ protected:
     touchgfx::Box __background;
     touchgfx::Container Background;
     touchgfx::Image road;
+    touchgfx::Image road1;
     touchgfx::MoveAnimator< touchgfx::Image > image1;
-    touchgfx::Button leftButton;
-    touchgfx::Button rightButton;
     touchgfx::Image redcar;
+    touchgfx::Button rightButton;
+    touchgfx::Button leftButton;
     touchgfx::Button GameState;
+    touchgfx::Button ExitGame;
+    touchgfx::TextAreaWithOneWildcard Score;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t SCORE_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar ScoreBuffer[SCORE_SIZE];
 
 private:
 

@@ -24,6 +24,12 @@
     <ClCompile Include="..\..\generated\gui_generated\src\main_screen\MainViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
+    <ClCompile Include="..\..\gui\src\gameover_screen\GameOverPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\gameover_screen\GameOverView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\gameover_screen\GameOverViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\start_screen\startPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\start_screen\startView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\start_screen\startViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -177,6 +183,12 @@
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\GameOverPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\GameOverView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gameover_screen\GameOverViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\start_screen\startPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\start_screen\startView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\start_screen\startViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

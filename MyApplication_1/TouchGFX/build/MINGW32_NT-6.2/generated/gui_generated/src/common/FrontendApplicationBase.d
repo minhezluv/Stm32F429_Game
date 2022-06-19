@@ -40,20 +40,29 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/main_screen/MainView.hpp \
- generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp \
+ gui/include/gui/start_screen/startView.hpp \
+ generated/gui_generated/include/gui_generated/start_screen/startViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/main_screen/MainPresenter.hpp \
+ gui/include/gui/start_screen/startPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ gui/include/gui/main_screen/MainView.hpp \
+ generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp \
+ gui/include/gui/main_screen/MainPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ gui/include/gui/gameover_screen/GameOverView.hpp \
+ generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ gui/include/gui/gameover_screen/GameOverPresenter.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
 
@@ -139,13 +148,13 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
-gui/include/gui/main_screen/MainView.hpp:
+gui/include/gui/start_screen/startView.hpp:
 
-generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp:
+generated/gui_generated/include/gui_generated/start_screen/startViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/main_screen/MainPresenter.hpp:
+gui/include/gui/start_screen/startPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
@@ -159,13 +168,31 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+gui/include/gui/main_screen/MainView.hpp:
+
+generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp:
+
+gui/include/gui/main_screen/MainPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
-generated/texts/include/texts/TextKeysAndLanguages.hpp:
+gui/include/gui/gameover_screen/GameOverView.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+
+gui/include/gui/gameover_screen/GameOverPresenter.hpp:
+
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 
