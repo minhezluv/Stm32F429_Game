@@ -74,11 +74,14 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ gui/include/gui/options_screen/optionsView.hpp \
+ generated/gui_generated/include/gui_generated/options_screen/optionsViewBase.hpp \
+ gui/include/gui/options_screen/optionsPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  gui/include/gui/main_screen/MainView.hpp \
  generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp \
  gui/include/gui/main_screen/MainPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  gui/include/gui/gameover_screen/GameOverView.hpp \
@@ -238,6 +241,14 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+gui/include/gui/options_screen/optionsView.hpp:
+
+generated/gui_generated/include/gui_generated/options_screen/optionsViewBase.hpp:
+
+gui/include/gui/options_screen/optionsPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
 gui/include/gui/main_screen/MainView.hpp:
 
 generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp:
@@ -245,8 +256,6 @@ generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp:
 gui/include/gui/main_screen/MainPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 

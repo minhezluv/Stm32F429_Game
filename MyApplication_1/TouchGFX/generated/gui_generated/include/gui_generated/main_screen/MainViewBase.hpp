@@ -52,7 +52,9 @@ protected:
     touchgfx::Container Background;
     touchgfx::Image road;
     touchgfx::Image road1;
+    touchgfx::Image finish;
     touchgfx::MoveAnimator< touchgfx::Image > image1;
+    touchgfx::Image rock;
     touchgfx::Image redcar;
     touchgfx::Button rightButton;
     touchgfx::Button leftButton;

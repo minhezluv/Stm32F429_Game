@@ -11,6 +11,8 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/start_screen/startView.hpp>
 #include <gui/start_screen/startPresenter.hpp>
+#include <gui/options_screen/optionsView.hpp>
+#include <gui/options_screen/optionsPresenter.hpp>
 #include <gui/main_screen/MainView.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
 #include <gui/gameover_screen/GameOverView.hpp>
@@ -44,6 +46,19 @@ void FrontendApplicationBase::gotostartScreenNoTransition()
 void FrontendApplicationBase::gotostartScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<startView, startPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// options
+
+void FrontendApplicationBase::gotooptionsScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotooptionsScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotooptionsScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<optionsView, optionsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // Main

@@ -21,25 +21,31 @@ MainViewBase::MainViewBase() :
     road1.setXY(0, -320);
     road1.setBitmap(touchgfx::Bitmap(BITMAP_BG_GAME_ID));
 
+    finish.setXY(0, 113);
+    finish.setBitmap(touchgfx::Bitmap(BITMAP_FINISH_ID));
+
     image1.setXY(103, 236);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_GREEN_ID));
+
+    rock.setXY(103, 78);
+    rock.setBitmap(touchgfx::Bitmap(BITMAP_ROCK_ID));
 
     redcar.setXY(58, -81);
     redcar.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
 
-    rightButton.setXY(167, 260);
+    rightButton.setXY(180, 260);
     rightButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     rightButton.setAction(buttonCallback);
 
-    leftButton.setXY(15, 260);
+    leftButton.setXY(0, 260);
     leftButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     leftButton.setAction(buttonCallback);
 
-    GameState.setXY(15, 13);
+    GameState.setXY(15, 18);
     GameState.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID));
     GameState.setAction(buttonCallback);
 
-    ExitGame.setXY(194, 9);
+    ExitGame.setXY(187, 14);
     ExitGame.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_48_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_48_ID));
     ExitGame.setAction(buttonCallback);
 
@@ -54,7 +60,9 @@ MainViewBase::MainViewBase() :
     add(Background);
     add(road);
     add(road1);
+    add(finish);
     add(image1);
+    add(rock);
     add(redcar);
     add(rightButton);
     add(leftButton);

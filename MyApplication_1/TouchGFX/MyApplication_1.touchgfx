@@ -32,6 +32,96 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "options"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "options",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "bg_option",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "bg_option.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 43,
+            "Width": 154,
+            "Height": 49,
+            "TextId": "__SingleUse_028E",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Button",
+            "Name": "button_easy",
+            "X": 51,
+            "Y": 59,
+            "Width": 139,
+            "Height": 72,
+            "Pressed": "button_easy.png",
+            "Released": "button_easy.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button_hard",
+            "X": 51,
+            "Y": 227,
+            "Width": 139,
+            "Height": 72,
+            "Pressed": "button_hard.png",
+            "Released": "button_hard.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button_normal",
+            "X": 51,
+            "Y": 143,
+            "Width": 139,
+            "Height": 72,
+            "Pressed": "button_normal.png",
+            "Released": "button_normal.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_easy"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_normal"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_hard"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Main"
             }
           }
@@ -64,6 +154,14 @@
           },
           {
             "Type": "Image",
+            "Name": "finish",
+            "Y": 113,
+            "Width": 240,
+            "Height": 40,
+            "RelativeFilename": "finish.png"
+          },
+          {
+            "Type": "Image",
             "Name": "image1",
             "X": 103,
             "Y": 236,
@@ -71,6 +169,15 @@
             "Height": 73,
             "RelativeFilename": "car_green.png",
             "Moveable": true
+          },
+          {
+            "Type": "Image",
+            "Name": "rock",
+            "X": 103,
+            "Y": 78,
+            "Width": 37,
+            "Height": 24,
+            "RelativeFilename": "rock.png"
           },
           {
             "Type": "Image",
@@ -84,30 +191,27 @@
           {
             "Type": "Button",
             "Name": "rightButton",
-            "X": 167,
+            "X": 180,
             "Y": 260,
             "Width": 60,
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Style": "Style5"
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png"
           },
           {
             "Type": "Button",
             "Name": "leftButton",
-            "X": 15,
             "Y": 260,
             "Width": 60,
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Style": "Style5"
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png"
           },
           {
             "Type": "Button",
             "Name": "GameState",
             "X": 15,
-            "Y": 13,
+            "Y": 18,
             "Width": 30,
             "Height": 42,
             "Pressed": "__designer\\Blue_Icons_Pause_48.png",
@@ -116,8 +220,8 @@
           {
             "Type": "Button",
             "Name": "ExitGame",
-            "X": 194,
-            "Y": 9,
+            "X": 187,
+            "Y": 14,
             "Width": 46,
             "Height": 46,
             "Pressed": "__designer\\Blue_Icons_Remove_48.png",

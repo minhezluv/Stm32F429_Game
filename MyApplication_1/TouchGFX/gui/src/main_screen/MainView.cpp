@@ -70,7 +70,7 @@ void MainView::handleTickEvent() {
     tickCounter++;
     if (GameState) {
         if (redcar.getY() < 320) {
-            moveCar(redcar.getX(), redcar.getY() + 5);
+            moveCar(redcar.getX(), redcar.getY() + 8);
         }
         else {
             resetCar();

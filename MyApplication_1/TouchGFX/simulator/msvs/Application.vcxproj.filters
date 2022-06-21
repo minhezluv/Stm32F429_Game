@@ -208,6 +208,18 @@
     <Filter Include="Source Files\generated\gui_generated\gameover_screen">
       <UniqueIdentifier>8E742417-6091-CC55-5175-A5C73C2EC128</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\options_screen">
+      <UniqueIdentifier>FFBB1D46-A7C8-DDDA-96A7-EEF3E613D939</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\options_screen">
+      <UniqueIdentifier>54467D56-BAF3-1636-72CF-DECBB43FCD83</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\options_screen">
+      <UniqueIdentifier>5AA3C516-00B0-3CCF-2D39-7455975D0A23</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\options_screen">
+      <UniqueIdentifier>F462A9F9-058E-800D-6D7B-5C67418C0C3E</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -266,6 +278,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\start_screen\startViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\start_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\options_screen\optionsPresenter.cpp">
+      <Filter>Source Files\gui\options_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\options_screen\optionsView.cpp">
+      <Filter>Source Files\gui\options_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\options_screen\optionsViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\options_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -735,6 +756,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\start_screen\startViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\start_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\options_screen\optionsPresenter.hpp">
+      <Filter>Header Files\gui\options_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\options_screen\optionsView.hpp">
+      <Filter>Header Files\gui\options_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\options_screen\optionsViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\options_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
