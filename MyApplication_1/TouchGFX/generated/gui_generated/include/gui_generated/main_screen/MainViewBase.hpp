@@ -56,6 +56,7 @@ protected:
     touchgfx::MoveAnimator< touchgfx::Image > image1;
     touchgfx::Image rock;
     touchgfx::Image redcar;
+    touchgfx::Image redcar1;
     touchgfx::Button rightButton;
     touchgfx::Button leftButton;
     touchgfx::Button GameState;
@@ -65,7 +66,7 @@ protected:
     /*
      * Wildcard Buffers
      */
-    static const uint16_t SCORE_SIZE = 3;
+    static const uint16_t SCORE_SIZE = 5;
     touchgfx::Unicode::UnicodeChar ScoreBuffer[SCORE_SIZE];
 
 private:

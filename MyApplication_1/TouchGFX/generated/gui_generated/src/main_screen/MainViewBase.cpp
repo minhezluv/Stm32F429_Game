@@ -15,23 +15,26 @@ MainViewBase::MainViewBase() :
 
     Background.setPosition(0, 0, 240, 320);
 
-    road.setXY(0, 0);
+    road.setXY(0, -320);
     road.setBitmap(touchgfx::Bitmap(BITMAP_BG_GAME_ID));
 
-    road1.setXY(0, -320);
+    road1.setXY(0, 0);
     road1.setBitmap(touchgfx::Bitmap(BITMAP_BG_GAME_ID));
 
-    finish.setXY(0, 113);
+    finish.setXY(0, -180);
     finish.setBitmap(touchgfx::Bitmap(BITMAP_FINISH_ID));
 
-    image1.setXY(103, 236);
+    image1.setXY(103, 187);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_GREEN_ID));
 
-    rock.setXY(103, 78);
+    rock.setXY(192, -55);
     rock.setBitmap(touchgfx::Bitmap(BITMAP_ROCK_ID));
 
-    redcar.setXY(58, -81);
+    redcar.setXY(60, -73);
     redcar.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
+
+    redcar1.setXY(103, -233);
+    redcar1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
 
     rightButton.setXY(180, 260);
     rightButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
@@ -41,7 +44,7 @@ MainViewBase::MainViewBase() :
     leftButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     leftButton.setAction(buttonCallback);
 
-    GameState.setXY(15, 18);
+    GameState.setXY(9, 18);
     GameState.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID));
     GameState.setAction(buttonCallback);
 
@@ -49,7 +52,7 @@ MainViewBase::MainViewBase() :
     ExitGame.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_48_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_48_ID));
     ExitGame.setAction(buttonCallback);
 
-    Score.setPosition(79, 14, 83, 41);
+    Score.setPosition(56, 14, 129, 46);
     Score.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Score.setLinespacing(0);
     Unicode::snprintf(ScoreBuffer, SCORE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ZQ4I).getText());
@@ -64,6 +67,7 @@ MainViewBase::MainViewBase() :
     add(image1);
     add(rock);
     add(redcar);
+    add(redcar1);
     add(rightButton);
     add(leftButton);
     add(GameState);

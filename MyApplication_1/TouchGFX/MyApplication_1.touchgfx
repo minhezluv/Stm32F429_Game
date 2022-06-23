@@ -140,13 +140,6 @@
           {
             "Type": "Image",
             "Name": "road",
-            "Width": 240,
-            "Height": 320,
-            "RelativeFilename": "bg_game.png"
-          },
-          {
-            "Type": "Image",
-            "Name": "road1",
             "Y": -320,
             "Width": 240,
             "Height": 320,
@@ -154,8 +147,15 @@
           },
           {
             "Type": "Image",
+            "Name": "road1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "bg_game.png"
+          },
+          {
+            "Type": "Image",
             "Name": "finish",
-            "Y": 113,
+            "Y": -180,
             "Width": 240,
             "Height": 40,
             "RelativeFilename": "finish.png"
@@ -164,7 +164,7 @@
             "Type": "Image",
             "Name": "image1",
             "X": 103,
-            "Y": 236,
+            "Y": 187,
             "Width": 35,
             "Height": 73,
             "RelativeFilename": "car_green.png",
@@ -173,8 +173,8 @@
           {
             "Type": "Image",
             "Name": "rock",
-            "X": 103,
-            "Y": 78,
+            "X": 192,
+            "Y": -55,
             "Width": 37,
             "Height": 24,
             "RelativeFilename": "rock.png"
@@ -182,8 +182,17 @@
           {
             "Type": "Image",
             "Name": "redcar",
-            "X": 58,
-            "Y": -81,
+            "X": 60,
+            "Y": -73,
+            "Width": 35,
+            "Height": 73,
+            "RelativeFilename": "car_red.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "redcar1",
+            "X": 103,
+            "Y": -233,
             "Width": 35,
             "Height": 73,
             "RelativeFilename": "car_red.png"
@@ -210,7 +219,7 @@
           {
             "Type": "Button",
             "Name": "GameState",
-            "X": 15,
+            "X": 9,
             "Y": 18,
             "Width": 30,
             "Height": 42,
@@ -230,16 +239,16 @@
           {
             "Type": "TextArea",
             "Name": "Score",
-            "X": 79,
+            "X": 56,
             "Y": 14,
-            "Width": 83,
-            "Height": 41,
+            "Width": 129,
+            "Height": 46,
             "TextId": "__SingleUse_DB3A",
             "TextRotation": "0",
             "Wildcard1": {
               "TextId": "__SingleUse_ZQ4I",
               "UseBuffer": true,
-              "BufferSize": 3
+              "BufferSize": 5
             }
           }
         ],

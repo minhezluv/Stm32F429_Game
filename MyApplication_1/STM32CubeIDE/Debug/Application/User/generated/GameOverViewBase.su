@@ -1,0 +1,33 @@
+Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+Drawable.hpp:400:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+Drawable.hpp:488:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+Drawable.hpp:498:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+Drawable.hpp:585:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+Drawable.hpp:700:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+Screen.hpp:93:18:virtual void touchgfx::Screen::setupScreen()	0	static
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+Widget.hpp:47:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+View.hpp:36:7:touchgfx::View<GameOverPresenter>::~View()	0	static
+GameOverViewBase.hpp:18:13:GameOverViewBase::~GameOverViewBase()	0	static
+GameOverViewBase.cpp:32:6:virtual void GameOverViewBase::setupScreen()	0	static
+Callback.hpp:357:8:touchgfx::Callback<GameOverViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
+Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = GameOverViewBase; T1 = const touchgfx::AbstractButton&]	8	static
+Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = GameOverViewBase; T1 = const touchgfx::AbstractButton&]	0	static
+Callback.hpp:357:8:virtual touchgfx::Callback<GameOverViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
+View.hpp:36:7:virtual touchgfx::View<GameOverPresenter>::~View()	8	static
+GameOverViewBase.hpp:18:13:virtual GameOverViewBase::~GameOverViewBase()	8	static
+GameOverViewBase.cpp:37:6:void GameOverViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
+Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Button.hpp:34:5:touchgfx::Button::Button()	8	static
+GameOverViewBase.cpp:8:1:GameOverViewBase::GameOverViewBase()	48	static

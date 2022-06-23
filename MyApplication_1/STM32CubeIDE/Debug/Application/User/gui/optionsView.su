@@ -1,0 +1,8 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+optionsView.hpp:11:13:optionsView::~optionsView()	0	static
+optionsView.cpp:13:6:virtual void optionsView::tearDownScreen()	0	static
+optionsView.cpp:8:6:virtual void optionsView::setupScreen()	0	static
+optionsView.hpp:11:13:virtual optionsView::~optionsView()	8	static
+optionsView.cpp:3:1:optionsView::optionsView()	8	static

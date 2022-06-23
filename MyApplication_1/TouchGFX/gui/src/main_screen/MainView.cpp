@@ -11,8 +11,7 @@ void MainView::setupScreen()
     MainViewBase::setupScreen();
 }
 
-void MainView::tearDownScreen()
-{
+void MainView::tearDownScreen() {
     MainViewBase::tearDownScreen();
 }
 
@@ -43,51 +42,64 @@ void MainView::leftFunction() {
     image1.invalidate();
 }
 
-void MainView::moveCar(int16_t x, int16_t y) {
-    redcar.moveTo(x, y);
-    redcar.invalidate();
+void MainView::moveCar(touchgfx::Image &obj,int16_t speed) {
+    int16_t x = obj.getX();
+    int16_t y = obj.getY() + speed;
+    obj.moveTo(x, y);
+    obj.invalidate();
 }
-void MainView::resetCar() {
+void MainView::resetCar(touchgfx::Image &obj) {
     int16_t k = rand() % 5;
-    redcar.moveTo(Xcar[k], -36);
-    redcar.invalidate();
+    obj.moveTo(Xcar[k], -36);
+    obj.invalidate();
 }
 
-void MainView::updateRoad() {
+void MainView::updateRoad(int16_t speed) {
     if (GameState) {
         int currX = road.getX();
-        int currY = road.getY() + 5;
-        if (currY >= 320)currY = -320;
+        int currY = road.getY() + speed;
+        if (currY >= 320){currY = -320;score++;}
         road.moveTo(currX, currY);
         int currX1 = road1.getX();
-        int currY1 = road1.getY() + 5;
-        if (currY1 >= 320)currY1 = -320;
+        int currY1 = road1.getY() + speed;
+        if (currY1 >= 320){currY1 = -320;score++;}
         road1.moveTo(currX1, currY1);
     }
 
 }
 void MainView::handleTickEvent() {
     tickCounter++;
+    updateScore(score);
+    if(score==10)sprc=5;
+    else if(score==20)sprc=6;
     if (GameState) {
         if (redcar.getY() < 320) {
-            moveCar(redcar.getX(), redcar.getY() + 8);
+            moveCar(redcar,sprc);
         }
         else {
-            resetCar();
-            score++;
-            updateScore(score);
+            resetCar(redcar);
         }
-        if (isTouching(image1.getX(), image1.getY(), redcar.getX(), redcar.getY())) {
+        if (redcar1.getY() < 320) {
+            moveCar(redcar1,sprc);
+        }
+        else {
+            resetCar(redcar1);
+        }
+
+        if (isTouching()) {
             GameState = false;
             Sleep(1000);
             application().gotoGameOverScreenNoTransition();
         }
     }
-    updateRoad();
+    updateRoad(4);
 }
 
-bool MainView::isTouching(int16_t ball_x, int16_t ball_y, int16_t paddle_x, int16_t paddle_y) {
-    return (abs(ball_x - paddle_x) < 34) && (abs(ball_y - paddle_y) < 72);
+bool MainView::isTouching() {
+
+
+
+    return 0;
 }
 void MainView::startGame() {
     if (GameState)
