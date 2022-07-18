@@ -3,7 +3,7 @@
 
 #include <gui_generated/gameover_screen/GameOverViewBase.hpp>
 #include <gui/gameover_screen/GameOverPresenter.hpp>
-
+#include <gui/main_screen/MainView.hpp>
 class GameOverView : public GameOverViewBase
 {
 public:
@@ -11,7 +11,9 @@ public:
     virtual ~GameOverView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    void update(int16_t x);
 protected:
 };
+
 
 #endif // GAMEOVERVIEW_HPP

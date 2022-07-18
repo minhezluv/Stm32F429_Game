@@ -319,16 +319,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/optionsPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/options_screen/optionsPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/optionsView.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/options_screen/optionsView.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/gui/startPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/start_screen/startPresenter.cpp</locationURI>
@@ -422,11 +412,6 @@
 			<name>Application/User/generated/MainViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/optionsViewBase.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/options_screen/optionsViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/startViewBase.cpp</name>

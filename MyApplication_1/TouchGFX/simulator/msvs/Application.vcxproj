@@ -30,9 +30,6 @@
     <ClCompile Include="..\..\gui\src\start_screen\startPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\start_screen\startView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\start_screen\startViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\options_screen\optionsPresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\options_screen\optionsView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\options_screen\optionsViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -192,9 +189,6 @@
     <ClInclude Include="..\..\gui\include\gui\start_screen\startPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\start_screen\startView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\start_screen\startViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\options_screen\optionsPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\options_screen\optionsView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\options_screen\optionsViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

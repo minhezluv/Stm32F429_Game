@@ -23,9 +23,6 @@ public:
     // start
     void gotostartScreenNoTransition();
 
-    // options
-    void gotooptionsScreenNoTransition();
-
     // Main
     void gotoMainScreenNoTransition();
 
@@ -39,9 +36,6 @@ protected:
 
     // start
     void gotostartScreenNoTransitionImpl();
-
-    // options
-    void gotooptionsScreenNoTransitionImpl();
 
     // Main
     void gotoMainScreenNoTransitionImpl();

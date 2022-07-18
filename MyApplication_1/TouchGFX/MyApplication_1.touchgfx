@@ -32,96 +32,6 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "options"
-            }
-          }
-        ]
-      },
-      {
-        "Name": "options",
-        "Components": [
-          {
-            "Type": "Image",
-            "Name": "bg_option",
-            "Width": 240,
-            "Height": 320,
-            "RelativeFilename": "bg_option.png"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 43,
-            "Width": 154,
-            "Height": 49,
-            "TextId": "__SingleUse_028E",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "Button",
-            "Name": "button_easy",
-            "X": 51,
-            "Y": 59,
-            "Width": 139,
-            "Height": 72,
-            "Pressed": "button_easy.png",
-            "Released": "button_easy.png"
-          },
-          {
-            "Type": "Button",
-            "Name": "button_hard",
-            "X": 51,
-            "Y": 227,
-            "Width": 139,
-            "Height": 72,
-            "Pressed": "button_hard.png",
-            "Released": "button_hard.png"
-          },
-          {
-            "Type": "Button",
-            "Name": "button_normal",
-            "X": 51,
-            "Y": 143,
-            "Width": 139,
-            "Height": 72,
-            "Pressed": "button_normal.png",
-            "Released": "button_normal.png"
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "Interaction1",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "button_easy"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Main"
-            }
-          },
-          {
-            "InteractionName": "Interaction2",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "button_normal"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Main"
-            }
-          },
-          {
-            "InteractionName": "Interaction3",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "button_hard"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Main"
             }
           }
@@ -154,14 +64,6 @@
           },
           {
             "Type": "Image",
-            "Name": "finish",
-            "Y": -180,
-            "Width": 240,
-            "Height": 40,
-            "RelativeFilename": "finish.png"
-          },
-          {
-            "Type": "Image",
             "Name": "image1",
             "X": 103,
             "Y": 187,
@@ -173,8 +75,8 @@
           {
             "Type": "Image",
             "Name": "rock",
-            "X": 192,
-            "Y": -55,
+            "X": 9,
+            "Y": -442,
             "Width": 37,
             "Height": 24,
             "RelativeFilename": "rock.png"
@@ -192,7 +94,7 @@
             "Type": "Image",
             "Name": "redcar1",
             "X": 103,
-            "Y": -233,
+            "Y": -264,
             "Width": 35,
             "Height": 73,
             "RelativeFilename": "car_red.png"

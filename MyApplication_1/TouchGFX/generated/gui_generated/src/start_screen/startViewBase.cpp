@@ -34,8 +34,8 @@ void startViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     if (&src == &playButton)
     {
         //Interaction1
-        //When playButton clicked change screen to options
-        //Go to options with no screen transition
-        application().gotooptionsScreenNoTransition();
+        //When playButton clicked change screen to Main
+        //Go to Main with no screen transition
+        application().gotoMainScreenNoTransition();
     }
 }

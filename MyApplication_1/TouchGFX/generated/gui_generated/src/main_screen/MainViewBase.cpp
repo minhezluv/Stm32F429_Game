@@ -21,19 +21,16 @@ MainViewBase::MainViewBase() :
     road1.setXY(0, 0);
     road1.setBitmap(touchgfx::Bitmap(BITMAP_BG_GAME_ID));
 
-    finish.setXY(0, -180);
-    finish.setBitmap(touchgfx::Bitmap(BITMAP_FINISH_ID));
-
     image1.setXY(103, 187);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_GREEN_ID));
 
-    rock.setXY(192, -55);
+    rock.setXY(9, -442);
     rock.setBitmap(touchgfx::Bitmap(BITMAP_ROCK_ID));
 
     redcar.setXY(60, -73);
     redcar.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
 
-    redcar1.setXY(103, -233);
+    redcar1.setXY(103, -264);
     redcar1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
 
     rightButton.setXY(180, 260);
@@ -63,7 +60,6 @@ MainViewBase::MainViewBase() :
     add(Background);
     add(road);
     add(road1);
-    add(finish);
     add(image1);
     add(rock);
     add(redcar);

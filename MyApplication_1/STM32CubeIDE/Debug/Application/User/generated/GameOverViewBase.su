@@ -17,17 +17,31 @@ Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
 Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
 Widget.hpp:47:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
+TextArea.hpp:48:18:virtual void touchgfx::TextArea::setWidth(int16_t)	32	static
+TextArea.hpp:54:18:virtual void touchgfx::TextArea::setHeight(int16_t)	32	static
+TextArea.hpp:60:18:virtual touchgfx::Rect touchgfx::TextArea::getSolidRect() const	0	static
+TextArea.hpp:89:18:virtual void touchgfx::TextArea::setAlpha(uint8_t)	0	static
+TextArea.hpp:127:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	16	static
+TextArea.hpp:403:41:virtual const UnicodeChar* touchgfx::TextArea::getWildcard2() const	0	static
+TextAreaWithWildcard.hpp:81:41:virtual const UnicodeChar* touchgfx::TextAreaWithOneWildcard::getWildcard1() const	0	static
 View.hpp:36:7:touchgfx::View<GameOverPresenter>::~View()	0	static
-GameOverViewBase.hpp:18:13:GameOverViewBase::~GameOverViewBase()	0	static
-GameOverViewBase.cpp:32:6:virtual void GameOverViewBase::setupScreen()	0	static
+GameOverViewBase.hpp:19:13:GameOverViewBase::~GameOverViewBase()	0	static
+GameOverViewBase.cpp:41:6:virtual void GameOverViewBase::setupScreen()	0	static
 Callback.hpp:357:8:touchgfx::Callback<GameOverViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
+TextAreaWithWildcard.hpp:59:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	0	static
 Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = GameOverViewBase; T1 = const touchgfx::AbstractButton&]	8	static
 Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = GameOverViewBase; T1 = const touchgfx::AbstractButton&]	0	static
+TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
+TextAreaWithWildcard.hpp:59:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	8	static
 Callback.hpp:357:8:virtual touchgfx::Callback<GameOverViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 View.hpp:36:7:virtual touchgfx::View<GameOverPresenter>::~View()	8	static
-GameOverViewBase.hpp:18:13:virtual GameOverViewBase::~GameOverViewBase()	8	static
-GameOverViewBase.cpp:37:6:void GameOverViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+GameOverViewBase.hpp:19:13:virtual GameOverViewBase::~GameOverViewBase()	8	static
+TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	16	static
+GameOverViewBase.cpp:46:6:void GameOverViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+TextAreaWithWildcard.hpp:46:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	0	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
 Button.hpp:34:5:touchgfx::Button::Button()	8	static
-GameOverViewBase.cpp:8:1:GameOverViewBase::GameOverViewBase()	48	static
+GameOverViewBase.cpp:9:1:GameOverViewBase::GameOverViewBase()	88	static

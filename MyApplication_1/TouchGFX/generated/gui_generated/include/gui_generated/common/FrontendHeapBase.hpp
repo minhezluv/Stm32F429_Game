@@ -14,8 +14,6 @@
 
 #include <gui/start_screen/startView.hpp>
 #include <gui/start_screen/startPresenter.hpp>
-#include <gui/options_screen/optionsView.hpp>
-#include <gui/options_screen/optionsPresenter.hpp>
 #include <gui/main_screen/MainView.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
 #include <gui/gameover_screen/GameOverView.hpp>
@@ -43,10 +41,9 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< startView,
-            touchgfx::meta::TypeList< optionsView,
             touchgfx::meta::TypeList< MainView,
             touchgfx::meta::TypeList< GameOverView,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::Nil > >
             > GeneratedViewTypes;
 
     /**
@@ -59,10 +56,9 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< startPresenter,
-            touchgfx::meta::TypeList< optionsPresenter,
             touchgfx::meta::TypeList< MainPresenter,
             touchgfx::meta::TypeList< GameOverPresenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::Nil > >
             > GeneratedPresenterTypes;
 
     /**
