@@ -1,3 +1,6 @@
+ButtonController.hpp:49:18:virtual void touchgfx::ButtonController::reset()	0	static
+TouchGFXConfiguration.cpp:40:16:virtual void H7B3ButtonController::init()	0	static
+TouchGFXConfiguration.cpp:38:7:H7B3ButtonController::~H7B3ButtonController()	0	static
 Partition.hpp:58:22:uint16_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::capacity() const [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::NoTransition, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	0	static
 Partition.hpp:63:22:uint32_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element_size() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::NoTransition, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	0	static
 Partition.hpp:69:19:void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::NoTransition, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	0	static
@@ -10,7 +13,9 @@ Partition.hpp:58:22:uint16_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS
 Partition.hpp:63:22:uint32_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element_size() [with ListOfTypes = touchgfx::meta::TypeList<GameOverPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	0	static
 Partition.hpp:69:19:void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) [with ListOfTypes = touchgfx::meta::TypeList<GameOverPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	0	static
 Partition.hpp:74:25:const void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) const [with ListOfTypes = touchgfx::meta::TypeList<GameOverPresenter, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	0	static
-FrontendHeapBase.hpp:86:18:virtual void FrontendHeapBase::gotoStartScreen(FrontendApplication&)	0	static
+TouchGFXConfiguration.cpp:41:16:virtual bool H7B3ButtonController::sample(uint8_t&)	8	static
+TouchGFXConfiguration.cpp:38:7:virtual H7B3ButtonController::~H7B3ButtonController()	8	static
+FrontendHeapBase.hpp:82:18:virtual void FrontendHeapBase::gotoStartScreen(FrontendApplication&)	0	static
 Partition.hpp:42:7:touchgfx::Partition<touchgfx::meta::TypeList<touchgfx::NoTransition, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, 1>::~Partition()	8	static
 Partition.hpp:42:7:virtual touchgfx::Partition<touchgfx::meta::TypeList<touchgfx::NoTransition, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, 1>::~Partition()	8	static
 Partition.hpp:42:7:touchgfx::Partition<touchgfx::meta::TypeList<MainView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >, 1>::~Partition()	8	static
@@ -20,7 +25,7 @@ Partition.hpp:42:7:virtual touchgfx::Partition<touchgfx::meta::TypeList<GameOver
 FrontendHeap.hpp:6:7:FrontendHeap::~FrontendHeap()	8	static
 FrontendHeap.hpp:56:29:void __tcf_0()	8	static
 FrontendHeap.hpp:6:7:virtual FrontendHeap::~FrontendHeap()	8	static
-TouchGFXConfiguration.cpp:37:6:void touchgfx_init()	32	static
-TouchGFXConfiguration.cpp:51:6:void touchgfx_taskEntry()	0	static
-TouchGFXConfiguration.cpp:60:1:cpp)	16	static
-TouchGFXConfiguration.cpp:60:1:cpp)	0	static
+TouchGFXConfiguration.cpp:57:6:void touchgfx_init()	32	static
+TouchGFXConfiguration.cpp:72:6:void touchgfx_taskEntry()	0	static
+TouchGFXConfiguration.cpp:81:1:cpp)	16	static
+TouchGFXConfiguration.cpp:81:1:cpp)	0	static

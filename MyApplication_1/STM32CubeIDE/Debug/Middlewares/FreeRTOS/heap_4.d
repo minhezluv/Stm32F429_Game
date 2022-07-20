@@ -1,5 +1,5 @@
 Middlewares/FreeRTOS/heap_4.o: \
- C:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
+ C:/Users/Admin/Desktop/Stm32F429_Game/MyApplication_1/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

@@ -1,5 +1,5 @@
 Application/User/generated/Table_verdana_20_4bpp.o: \
- C:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp \
+ C:/Users/Admin/Desktop/Stm32F429_Game/MyApplication_1/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/ConstFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

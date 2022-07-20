@@ -1,5 +1,5 @@
 Application/User/freertos.o: \
- C:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/Core/Src/freertos.c \
+ C:/Users/Admin/Desktop/Stm32F429_Game/MyApplication_1/Core/Src/freertos.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

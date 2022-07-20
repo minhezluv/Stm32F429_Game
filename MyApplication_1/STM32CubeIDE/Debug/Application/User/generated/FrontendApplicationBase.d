@@ -1,5 +1,5 @@
 Application/User/generated/FrontendApplicationBase.o: \
- C:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
+ C:/Users/Admin/Desktop/Stm32F429_Game/MyApplication_1/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp \
@@ -51,16 +51,13 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- ../../TouchGFX/gui/include/gui/options_screen/optionsView.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/options_screen/optionsViewBase.hpp \
- ../../TouchGFX/gui/include/gui/options_screen/optionsPresenter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../../TouchGFX/gui/include/gui/main_screen/MainView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp \
  ../../TouchGFX/gui/include/gui/main_screen/MainPresenter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
@@ -172,18 +169,6 @@ Application/User/generated/FrontendApplicationBase.o: \
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
-../../TouchGFX/gui/include/gui/options_screen/optionsView.hpp:
-
-../../TouchGFX/generated/gui_generated/include/gui_generated/options_screen/optionsViewBase.hpp:
-
-../../TouchGFX/gui/include/gui/options_screen/optionsPresenter.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
-
 ../../TouchGFX/gui/include/gui/main_screen/MainView.hpp:
 
 ../../TouchGFX/generated/gui_generated/include/gui_generated/main_screen/MainViewBase.hpp:
@@ -191,6 +176,12 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../TouchGFX/gui/include/gui/main_screen/MainPresenter.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 

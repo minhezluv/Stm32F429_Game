@@ -1,5 +1,5 @@
 Application/User/generated/CachedFont.o: \
- C:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/TouchGFX/generated/fonts/src/CachedFont.cpp \
+ C:/Users/Admin/Desktop/Stm32F429_Game/MyApplication_1/TouchGFX/generated/fonts/src/CachedFont.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/CachedFont.hpp \
  ../../TouchGFX/generated/fonts/include/fonts/FontCache.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

@@ -54,4 +54,4 @@ Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
 Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
 Button.hpp:34:5:touchgfx::Button::Button()	8	static
-MainViewBase.cpp:9:1:MainViewBase::MainViewBase()	120	static
+MainViewBase.cpp:9:1:MainViewBase::MainViewBase()	112	static

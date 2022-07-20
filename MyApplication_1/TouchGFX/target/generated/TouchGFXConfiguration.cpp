@@ -4,7 +4,7 @@
 ******************************************************************************
 * @attention
 *
-* <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+* <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
 * All rights reserved.</center></h2>
 *
 * This software component is licensed by ST under Ultimate Liberty license
@@ -23,6 +23,7 @@
 #include <TouchGFXHAL.hpp>
 #include <STM32TouchController.hpp>
 #include <stm32f4xx_hal.h>
+#include <platform/driver/button/ButtonController.hpp>
 
 extern "C" void touchgfx_init();
 extern "C" void touchgfx_taskEntry();
@@ -34,29 +35,50 @@ static ApplicationFontProvider fontProvider;
 static Texts texts;
 static TouchGFXHAL hal(dma, display, tc, 240, 320);
 
+class H7B3ButtonController : public touchgfx::ButtonController
+{
+  virtual void init() {  }
+  virtual bool sample(uint8_t& key) {
+
+    if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8) != GPIO_PIN_RESET) {
+      key = 0;
+      return true;
+    }
+    if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_9) != GPIO_PIN_RESET) {
+      key = 1;
+      return true;
+    }
+    return false;
+  }
+private:
+
+};
+H7B3ButtonController bc;
 void touchgfx_init()
 {
-    Bitmap::registerBitmapDatabase(BitmapDatabase::getInstance(), BitmapDatabase::getInstanceSize());
-    TypedText::registerTexts(&texts);
-    Texts::setLanguage(0);
+  Bitmap::registerBitmapDatabase(BitmapDatabase::getInstance(), BitmapDatabase::getInstanceSize());
+  TypedText::registerTexts(&texts);
+  Texts::setLanguage(0);
 
-    FontManager::setFontProvider(&fontProvider);
+  FontManager::setFontProvider(&fontProvider);
 
-    FrontendHeap& heap = FrontendHeap::getInstance();
-    (void)heap; // we need to obtain the reference above to initialize the frontend heap.
+  FrontendHeap& heap = FrontendHeap::getInstance();
+  (void)heap; // we need to obtain the reference above to initialize the frontend heap.
 
-    hal.initialize();
+  hal.initialize();
+  hal.setButtonController(&bc);
 }
 
 void touchgfx_taskEntry()
 {
-    /*
-     * Main event loop. Will wait for VSYNC signal, and then process next frame. Call
-     * this function from your GUI task.
-     *
-     * Note This function never returns
-     */
-    hal.taskEntry();
+  /*
+   * Main event loop. Will wait for VSYNC signal, and then process next frame. Call
+   * this function from your GUI task.
+   *
+   * Note This function never returns
+   */
+  hal.taskEntry();
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

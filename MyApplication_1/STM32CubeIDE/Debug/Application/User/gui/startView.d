@@ -1,5 +1,5 @@
 Application/User/gui/startView.o: \
- C:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/TouchGFX/gui/src/start_screen/startView.cpp \
+ C:/Users/Admin/Desktop/Stm32F429_Game/MyApplication_1/TouchGFX/gui/src/start_screen/startView.cpp \
  ../../TouchGFX/gui/include/gui/start_screen/startView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/start_screen/startViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

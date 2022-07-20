@@ -9,5 +9,5 @@ stm32f4xx_hal_msp.c:261:6:HAL_LTDC_MspInit	72	static
 stm32f4xx_hal_msp.c:373:6:HAL_LTDC_MspDeInit	8	static
 stm32f4xx_hal_msp.c:435:6:HAL_SPI_MspInit	40	static
 stm32f4xx_hal_msp.c:472:6:HAL_SPI_MspDeInit	0	static
-stm32f4xx_hal_msp.c:604:6:HAL_SDRAM_MspInit	48	static
-stm32f4xx_hal_msp.c:690:6:HAL_SDRAM_MspDeInit	8	static
+stm32f4xx_hal_msp.c:569:6:HAL_SDRAM_MspInit	48	static
+stm32f4xx_hal_msp.c:630:6:HAL_SDRAM_MspDeInit	8	static

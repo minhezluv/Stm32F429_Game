@@ -4,7 +4,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -22,13 +22,12 @@
 #include "stm32f4xx.h"
 #include "stm32f4xx_hal_ltdc.h"
 
-namespace
-{
-// Use the section "TouchGFX_Framebuffer" in the linker to specify the placement of the buffer
-LOCATION_PRAGMA("TouchGFX_Framebuffer")
-uint32_t frameBuf[(240 * 320 * 2 + 3) / 4 * 2] LOCATION_ATTRIBUTE("TouchGFX_Framebuffer");
-static uint16_t lcd_int_active_line;
-static uint16_t lcd_int_porch_line;
+namespace {
+    // Use the section "TouchGFX_Framebuffer" in the linker to specify the placement of the buffer
+    LOCATION_PRAGMA("TouchGFX_Framebuffer")
+    uint32_t frameBuf[(240 * 320 * 2 + 3) / 4 * 2] LOCATION_ATTRIBUTE("TouchGFX_Framebuffer");
+    static uint16_t lcd_int_active_line;
+    static uint16_t lcd_int_porch_line;
 }
 
 void TouchGFXGeneratedHAL::initialize()
@@ -37,7 +36,7 @@ void TouchGFXGeneratedHAL::initialize()
 
     registerEventListener(*(touchgfx::Application::getInstance()));
 
-    setFrameBufferStartAddresses((void*)frameBuf, (void*)(frameBuf + sizeof(frameBuf) / (sizeof(uint32_t) * 2)), (void*)0);
+    setFrameBufferStartAddresses((void*)frameBuf, (void*)(frameBuf + sizeof(frameBuf)/(sizeof(uint32_t)*2)), (void*)0);
     /*
      * Set whether the DMA transfers are locked to the TFT update cycle. If
      * locked, DMA transfer will not begin until the TFT controller has finished
@@ -98,7 +97,7 @@ void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect& rect)
 
 extern "C"
 {
-    void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef* hltdc)
+    void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef *hltdc)
     {
         if (LTDC->LIPCR == lcd_int_active_line)
         {

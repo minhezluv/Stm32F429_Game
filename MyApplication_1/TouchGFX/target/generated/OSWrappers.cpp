@@ -4,7 +4,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -109,12 +109,12 @@ void OSWrappers::waitForVSync()
 {
     if (vsync_queue)
     {
-        uint32_t dummyGet;
-        // First make sure the queue is empty, by trying to remove an element with 0 timeout.
-        osMessageQueueGet(vsync_queue, &dummyGet, 0, 0);
+      uint32_t dummyGet;
+      // First make sure the queue is empty, by trying to remove an element with 0 timeout.
+      osMessageQueueGet(vsync_queue, &dummyGet, 0, 0);
 
-        // Then, wait for next VSYNC to occur.
-        osMessageQueueGet(vsync_queue, &dummyGet, 0, osWaitForever);
+      // Then, wait for next VSYNC to occur.
+      osMessageQueueGet(vsync_queue, &dummyGet, 0, osWaitForever);
     }
 }
 

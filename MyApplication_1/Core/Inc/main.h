@@ -58,6 +58,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define BTN8_Pin GPIO_PIN_8
+#define BTN8_GPIO_Port GPIOD
+#define BTN9_Pin GPIO_PIN_9
+#define BTN9_GPIO_Port GPIOD
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

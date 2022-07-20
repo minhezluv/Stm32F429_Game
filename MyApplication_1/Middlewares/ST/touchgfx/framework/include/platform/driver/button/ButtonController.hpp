@@ -30,6 +30,7 @@ public:
     virtual ~ButtonController()
     {
     }
+    
 
     /** Initializes button controller. */
     virtual void init() = 0;
