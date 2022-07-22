@@ -21,6 +21,7 @@ public:
     MainViewBase();
     virtual ~MainViewBase() {}
     virtual void setupScreen();
+    virtual void handleKeyEvent(uint8_t key);
 
     /*
      * Virtual Action Handlers
@@ -56,8 +57,6 @@ protected:
     touchgfx::Image rock;
     touchgfx::Image redcar;
     touchgfx::Image redcar1;
-    touchgfx::Button rightButton;
-    touchgfx::Button leftButton;
     touchgfx::Button GameState;
     touchgfx::Button ExitGame;
     touchgfx::TextAreaWithOneWildcard Score;

@@ -1,18 +1,19 @@
-Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
-Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-MainView.hpp:12:13:MainView::~MainView()	0	static
-MainView.cpp:14:6:virtual void MainView::tearDownScreen()	0	static
-MainView.cpp:124:6:virtual void MainView::startGame()	0	static
-MainView.cpp:9:6:virtual void MainView::setupScreen()	0	static
-MainView.hpp:12:13:virtual MainView::~MainView()	8	static
-Drawable.hpp:585:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
-MainView.cpp:23:6:virtual void MainView::rightFunction()	16	static
-MainView.cpp:33:6:virtual void MainView::leftFunction()	16	static
-MainView.cpp:3:1:MainView::MainView()	8	static
-MainView.cpp:18:6:void MainView::updateScore(int16_t)	8	static
-MainView.cpp:41:6:void MainView::moveCar(touchgfx::Image&, int16_t)	8	static
-MainView.cpp:47:6:void MainView::resetCar(touchgfx::Image&)	16	static
-MainView.cpp:55:6:void MainView::resetRock(touchgfx::Image&)	16	static
-MainView.cpp:64:6:void MainView::updateRoad(int16_t)	16	static
-MainView.cpp:77:6:virtual void MainView::handleTickEvent()	8	static
-MainView.cpp:121:6:bool MainView::isTouching(int16_t, int16_t, int16_t, int16_t, int16_t, int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../TouchGFX/gui/include/gui/main_screen/MainView.hpp:12:13:MainView::~MainView()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:20:6:virtual void MainView::tearDownScreen()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:159:6:virtual void MainView::startGame()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:10:6:virtual void MainView::setupScreen()	0	static
+../../TouchGFX/gui/include/gui/main_screen/MainView.hpp:12:13:virtual MainView::~MainView()	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:585:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:31:6:virtual void MainView::rightFunction()	16	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:43:6:virtual void MainView::leftFunction()	16	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:4:1:MainView::MainView()	8	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:15:6:void MainView::pause()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:25:6:void MainView::updateScore(int16_t)	8	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:53:6:void MainView::moveCar(touchgfx::Image&, int16_t)	8	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:60:6:void MainView::resetCar(touchgfx::Image&)	8	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:67:6:void MainView::resetRock(touchgfx::Image&)	8	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:75:6:void MainView::updateRoad(int16_t)	16	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:99:6:virtual void MainView::handleTickEvent()	8	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:155:6:bool MainView::isTouching(int16_t, int16_t, int16_t, int16_t, int16_t, int16_t)	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/main_screen/MainView.cpp:166:6:void MainView::delay(int16_t)	0	static

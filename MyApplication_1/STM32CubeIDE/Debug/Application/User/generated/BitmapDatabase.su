@@ -1,2 +1,2 @@
-BitmapDatabase.cpp:47:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	0	static
-BitmapDatabase.cpp:52:10:uint16_t BitmapDatabase::getInstanceSize()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/generated/images/src/BitmapDatabase.cpp:43:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/generated/images/src/BitmapDatabase.cpp:48:10:uint16_t BitmapDatabase::getInstanceSize()	0	static

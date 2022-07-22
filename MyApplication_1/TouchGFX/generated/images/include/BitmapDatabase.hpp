@@ -8,21 +8,19 @@
 
 const uint16_t BITMAP_BG_GAME_ID = 0;
 const uint16_t BITMAP_BG_OPTION_ID = 1;
-const uint16_t BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID = 2;
-const uint16_t BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID = 3;
-const uint16_t BITMAP_BLUE_ICONS_PAUSE_48_ID = 4;
-const uint16_t BITMAP_BLUE_ICONS_REFRESH_48_ID = 5;
-const uint16_t BITMAP_BLUE_ICONS_REMOVE_48_ID = 6;
-const uint16_t BITMAP_BUTTON_EASY_ID = 7;
-const uint16_t BITMAP_BUTTON_HARD_ID = 8;
-const uint16_t BITMAP_BUTTON_NORMAL_ID = 9;
-const uint16_t BITMAP_BUTTON_PLAY_ID = 10;
-const uint16_t BITMAP_CAR_GREEN_ID = 11;
-const uint16_t BITMAP_CAR_RED_ID = 12;
-const uint16_t BITMAP_FINISH_ID = 13;
-const uint16_t BITMAP_GAMEOVER_ID = 14;
-const uint16_t BITMAP_POSTER_ID = 15;
-const uint16_t BITMAP_ROCK_ID = 16;
+const uint16_t BITMAP_BLUE_ICONS_PAUSE_48_ID = 2;
+const uint16_t BITMAP_BLUE_ICONS_REFRESH_48_ID = 3;
+const uint16_t BITMAP_BLUE_ICONS_REMOVE_48_ID = 4;
+const uint16_t BITMAP_BUTTON_EASY_ID = 5;
+const uint16_t BITMAP_BUTTON_HARD_ID = 6;
+const uint16_t BITMAP_BUTTON_NORMAL_ID = 7;
+const uint16_t BITMAP_BUTTON_PLAY_ID = 8;
+const uint16_t BITMAP_CAR_GREEN_ID = 9;
+const uint16_t BITMAP_CAR_RED_ID = 10;
+const uint16_t BITMAP_FINISH_ID = 11;
+const uint16_t BITMAP_GAMEOVER_ID = 12;
+const uint16_t BITMAP_POSTER_ID = 13;
+const uint16_t BITMAP_ROCK_ID = 14;
 
 namespace BitmapDatabase
 {

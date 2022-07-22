@@ -35,8 +35,6 @@
 "./Application/User/generated/Texts.o"
 "./Application/User/generated/TypedTextDatabase.o"
 "./Application/User/generated/UnmappedDataFont.o"
-"./Application/User/generated/image_Blue_Buttons_Round_icon_button.o"
-"./Application/User/generated/image_Blue_Buttons_Round_icon_button_pressed.o"
 "./Application/User/generated/image_Blue_Icons_Pause_48.o"
 "./Application/User/generated/image_Blue_Icons_Refresh_48.o"
 "./Application/User/generated/image_Blue_Icons_Remove_48.o"

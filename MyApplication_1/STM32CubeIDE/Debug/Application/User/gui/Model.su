@@ -1,2 +1,2 @@
-Model.cpp:4:1:Model::Model()	0	static
-Model.cpp:9:6:void Model::tick()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/model/Model.cpp:4:1:Model::Model()	0	static
+E:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/TouchGFX/gui/src/model/Model.cpp:9:6:void Model::tick()	0	static

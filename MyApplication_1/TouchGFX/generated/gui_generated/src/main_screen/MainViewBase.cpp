@@ -33,14 +33,6 @@ MainViewBase::MainViewBase() :
     redcar1.setXY(103, -264);
     redcar1.setBitmap(touchgfx::Bitmap(BITMAP_CAR_RED_ID));
 
-    rightButton.setXY(180, 260);
-    rightButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    rightButton.setAction(buttonCallback);
-
-    leftButton.setXY(0, 260);
-    leftButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    leftButton.setAction(buttonCallback);
-
     GameState.setXY(9, 18);
     GameState.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_PAUSE_48_ID));
     GameState.setAction(buttonCallback);
@@ -64,8 +56,6 @@ MainViewBase::MainViewBase() :
     add(rock);
     add(redcar);
     add(redcar1);
-    add(rightButton);
-    add(leftButton);
     add(GameState);
     add(ExitGame);
     add(Score);
@@ -76,23 +66,28 @@ void MainViewBase::setupScreen()
 
 }
 
-void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+//Handles when a key is pressed
+void MainViewBase::handleKeyEvent(uint8_t key)
 {
-    if (&src == &rightButton)
-    {
-        //rightFunction
-        //When rightButton clicked call virtual function
-        //Call rightFunction
-        rightFunction();
-    }
-    else if (&src == &leftButton)
+    if(0 == key)
     {
         //leftFunction
-        //When leftButton clicked call virtual function
+        //When hardware button 0 clicked call virtual function
         //Call leftFunction
         leftFunction();
     }
-    else if (&src == &GameState)
+    if(1 == key)
+    {
+        //rightFunction
+        //When hardware button 1 clicked call virtual function
+        //Call rightFunction
+        rightFunction();
+    }
+}
+
+void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &GameState)
     {
         //startGame
         //When GameState clicked call virtual function

@@ -30,10 +30,9 @@ public:
     virtual ~ButtonController()
     {
     }
-    
 
     /** Initializes button controller. */
-    virtual void init() = 0;
+    virtual void init() ;
 
     /**
      * Sample external key events.
@@ -49,6 +48,8 @@ public:
     virtual void reset()
     {
     }
+
+    uint8_t prevState=0x00;
 };
 
 } // namespace touchgfx

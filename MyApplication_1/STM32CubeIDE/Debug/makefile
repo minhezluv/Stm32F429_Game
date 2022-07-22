@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
+# Toolchain: GNU Tools for STM32 (10.3-2021.10)
 ################################################################################
 
 -include ../makefile.init
@@ -20,7 +20,6 @@ RM := rm -rf
 -include Application/User/TouchGFX/App/subdir.mk
 -include Application/User/subdir.mk
 -include Application/Startup/subdir.mk
--include subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -67,6 +66,9 @@ BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ART
 EXECUTABLES += \
 STM32F429I-DISCO.elf \
 
+MAP_FILES += \
+STM32F429I-DISCO.map \
+
 SIZE_OUTPUT += \
 default.size.stdout \
 
@@ -76,9 +78,6 @@ STM32F429I-DISCO.list \
 OBJCOPY_HEX += \
 STM32F429I-DISCO.hex \
 
-OBJCOPY_BIN += \
-STM32F429I-DISCO.bin \
-
 
 # All Target
 all: main-build
@@ -87,8 +86,8 @@ all: main-build
 main-build: STM32F429I-DISCO.elf secondary-outputs
 
 # Tool invocations
-STM32F429I-DISCO.elf: $(OBJS) $(USER_OBJS) C:\Users\Admin\Desktop\Stm32F429_Game\MyApplication_1\STM32CubeIDE\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32F429I-DISCO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\Stm32F429_Game\MyApplication_1\STM32CubeIDE\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F429I-DISCO.map" -Wl,--gc-sections -static -LC:/TouchGFXProjects/MyApplication_1/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc -LC:/TouchGFXProjects/Stm32F429_Game/MyApplication_1/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc -LC:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+STM32F429I-DISCO.elf STM32F429I-DISCO.map: $(OBJS) $(USER_OBJS) E:\20212\nhungtm\Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f\MyApplication_1\STM32CubeIDE\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "STM32F429I-DISCO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\20212\nhungtm\Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f\MyApplication_1\STM32CubeIDE\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F429I-DISCO.map" -Wl,--gc-sections -static -LC:/TouchGFXProjects/MyApplication_1/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc -LC:/TouchGFXProjects/Stm32F429_Game/MyApplication_1/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc -LC:/Users/Admin/Desktop/DoAnKTMT/Stm32F429_Game/MyApplication_1/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc -LE:/20212/nhungtm/Stm32F429_Game-fe4b4407c92a8433be3207be95ea3b880694ff8f/MyApplication_1/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -107,17 +106,12 @@ STM32F429I-DISCO.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-STM32F429I-DISCO.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "STM32F429I-DISCO.bin"
-	@echo 'Finished building: $@'
-	@echo ' '
-
 # Other Targets
 clean:
-	-$(RM) $(OBJDUMP_LIST)$(C_UPPER_DEPS)$(S_DEPS)$(C_DEPS)$(OBJCOPY_BIN)$(CC_DEPS)$(OBJCOPY_HEX)$(SIZE_OUTPUT)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(CXX_DEPS)$(S_UPPER_DEPS)$(CPP_DEPS) STM32F429I-DISCO.elf
+	-$(RM) STM32F429I-DISCO.elf STM32F429I-DISCO.hex STM32F429I-DISCO.list STM32F429I-DISCO.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX) $(OBJCOPY_BIN)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
@@ -126,6 +120,6 @@ fail-specified-linker-script-missing:
 warn-no-linker-script-specified:
 	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
 
-.PHONY: all clean dependents fail-specified-linker-script-missing warn-no-linker-script-specified
+.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
 
 -include ../makefile.targets
