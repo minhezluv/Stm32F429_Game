@@ -27,7 +27,7 @@
 #include <TouchGFXHAL.hpp>
 #include <STM32TouchController.hpp>
 #include <stm32f4xx_hal.h>
-
+#include "cmsis_os.h"
 extern "C" void touchgfx_init();
 extern "C" void touchgfx_taskEntry();
 extern "C" void touchgfx_components_init();
@@ -47,27 +47,29 @@ class MyButtonController : public touchgfx::ButtonController
     }
     virtual bool sample(uint8_t &key)
     {
-        if ((HAL_GPIO_ReadPin(GPIOE, GPIO_PIN_2) == 0) && prevState == 0x00)
+        if ((HAL_GPIO_ReadPin(GPIOG, GPIO_PIN_2) == GPIO_PIN_RESET) && prevState == 0x00)
         {
 
             key = 0;
             // osDelay(1);
             prevState = 0xFF;
+
             return true;
         }
-        if ((HAL_GPIO_ReadPin(GPIOE, GPIO_PIN_3) == 0) && prevState == 0x00)
+        if ((HAL_GPIO_ReadPin(GPIOG, GPIO_PIN_3) == GPIO_PIN_RESET) && prevState == 0x00)
         {
 
             key = 1;
             // osDelay(1);
             prevState = 0xFF;
+
             return true;
         }
-        // if ((HAL_GPIO_ReadPin(GPIOE, GPIO_PIN_2) == 1) && ((HAL_GPIO_ReadPin(GPIOE, GPIO_PIN_3) == 1)))
-        // {
-        //     prevState = 0x00;
-        // }
-        prevState = 0x00;
+        if ((HAL_GPIO_ReadPin(GPIOG, GPIO_PIN_2) == 1) && ((HAL_GPIO_ReadPin(GPIOG, GPIO_PIN_3) == 1)))
+        {
+            prevState = 0x00;
+        }
+
         return false;
     }
 
@@ -82,7 +84,7 @@ void touchgfx_init()
 
     FontManager::setFontProvider(&fontProvider);
 
-    FrontendHeap& heap = FrontendHeap::getInstance();
+    FrontendHeap &heap = FrontendHeap::getInstance();
     /*
      * we need to obtain the reference above to initialize the frontend heap.
      */

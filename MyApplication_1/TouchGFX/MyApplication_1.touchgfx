@@ -139,7 +139,8 @@
           {
             "InteractionName": "leftFunction",
             "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked"
+              "Type": "TriggerPhysicalButtonClicked",
+              "Name": "BTNL"
             },
             "Action": {
               "Type": "ActionCustom",
@@ -150,7 +151,8 @@
             "InteractionName": "rightFunction",
             "Trigger": {
               "Type": "TriggerPhysicalButtonClicked",
-              "ButtonKey": 1
+              "ButtonKey": 1,
+              "Name": "BTNR"
             },
             "Action": {
               "Type": "ActionCustom",
@@ -269,7 +271,15 @@
         "Height": 320
       }
     ],
-    "PhysicalButtons": [],
+    "PhysicalButtons": [
+      {
+        "Key": 1,
+        "Name": "BTNR"
+      },
+      {
+        "Name": "BTNL"
+      }
+    ],
     "FrameworkFeatures": {
       "LCD16bpp": {
         "Id": "LCD16bpp",

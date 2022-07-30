@@ -59,14 +59,14 @@ void MainView::moveCar(touchgfx::Image &obj, int16_t speed)
 }
 void MainView::resetCar(touchgfx::Image &obj)
 {
-    int k = 2;
+    int k = (tickCounter) % 5;
 
     obj.moveTo(Xcar[k], -36);
     obj.invalidate();
 }
 void MainView::resetRock(touchgfx::Image &obj)
 {
-    int k = 1;
+    int k = (tickCounter + 1) % 5;
 
     obj.moveTo(Xcar[k], -10);
     obj.invalidate();
@@ -130,24 +130,24 @@ void MainView::handleTickEvent()
         {
             resetRock(rock);
         }
-        // if (isTouching(image1.getX(), image1.getY(), redcar.getX(), redcar.getY(), 35, 73))
-        // {
-        //     GameState = false;
-        //     // Sleep(1000);
-        //     application().gotoGameOverScreenNoTransition();
-        // }
-        // if (isTouching(image1.getX(), image1.getY(), redcar1.getX(), redcar1.getY(), 35, 73))
-        // {
-        //     GameState = false;
-        //     // Sleep(1000);
-        //     application().gotoGameOverScreenNoTransition();
-        // }
-        // if (isTouching(image1.getX(), image1.getY(), rock.getX(), rock.getY(), 10, 34))
-        // {
-        //     GameState = false;
-        //     // Sleep(1000);
-        //     application().gotoGameOverScreenNoTransition();
-        // }
+        if (isTouching(image1.getX(), image1.getY(), redcar.getX(), redcar.getY(), 35, 73))
+        {
+            GameState = false;
+            // Sleep(1000);
+            application().gotoGameOverScreenNoTransition();
+        }
+        if (isTouching(image1.getX(), image1.getY(), redcar1.getX(), redcar1.getY(), 35, 73))
+        {
+            GameState = false;
+            // Sleep(1000);
+            application().gotoGameOverScreenNoTransition();
+        }
+        if (isTouching(image1.getX(), image1.getY(), rock.getX(), rock.getY(), 10, 34))
+        {
+            GameState = false;
+            // Sleep(1000);
+            application().gotoGameOverScreenNoTransition();
+        }
     }
     updateRoad(4);
 }
@@ -165,6 +165,8 @@ void MainView::startGame()
 }
 void MainView::delay(int16_t x)
 {
-    while (x>0){x--;}
-
+    while (x > 0)
+    {
+        x--;
+    }
 }
